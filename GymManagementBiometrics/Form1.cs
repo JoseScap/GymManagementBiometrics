@@ -87,7 +87,7 @@ namespace GymManagementBiometrics
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Log("GymManagementBiometrics iniciado");
+            Log("GymManagementBiometrics");
             _formHandle = this.Handle;
         }
 
