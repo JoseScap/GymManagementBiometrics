@@ -9,7 +9,6 @@ using System.Windows.Forms;
 using libzkfpcsharp;
 using Sample;
 using System.Threading.Tasks;
-using GymManagementBiometrics.EventHandler;
 
 namespace GymManagementBiometrics
 {
@@ -60,8 +59,6 @@ namespace GymManagementBiometrics
         private async Task CreateSocketServerAsync()
         {
             _client = new SocketIOClient.SocketIO("http://localhost:3000");
-
-            _client.On("Bio:Ping", (data) => EventHandler.EventHandler.HandleBioPing(_client, data));
 
             await _client.ConnectAsync();
         }

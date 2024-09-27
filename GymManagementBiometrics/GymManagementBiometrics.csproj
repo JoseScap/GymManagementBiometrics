@@ -231,7 +231,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BitmapFormat.cs" />
-    <Compile Include="Events\EventHandler.cs" />
+    <Compile Include="Messages\MessageHandler.cs" />
+    <Compile Include="FingerprintIdentifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FingerprintIdentifier.Designer.cs">
+      <DependentUpon>FingerprintIdentifier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -239,6 +245,9 @@
     <Compile Include="Messages\Messages.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FingerprintIdentifier.resx">
+      <DependentUpon>FingerprintIdentifier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
